@@ -1,7 +1,13 @@
 a=int(input("ingrese numero a"))
-b=int(input("ingrese numero b"))
+div=0
 
-for i in range (1,a):
-    i=i+1
-    res=a%i
-    print(res)
+for i in range (1,a+1):
+    if a%i==0:
+        div=div+1
+if div>2:
+    print("no es primo")
+else:
+    print("es primo")
+
+
+
